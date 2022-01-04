@@ -11,6 +11,7 @@ import com.github.cyberryan1.servercore18.features.invsee.InvseeCommand;
 import com.github.cyberryan1.servercore18.features.rules.RulesCommand;
 import com.github.cyberryan1.servercore18.features.teleport.*;
 import com.github.cyberryan1.servercore18.features.workbench.WorkbenchCommand;
+import com.github.cyberryan1.servercore18.features.worldborder.WorldborderSetup;
 import com.github.cyberryan1.servercore18.utils.yml.YMLUtils;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -32,6 +33,9 @@ public final class ServerCore18 extends JavaPlugin {
         registerAllCommands();
         // Register events
         registerAllEvents();
+
+        // Setup worldborders
+        new WorldborderSetup();
     }
 
     private void registerAllCommands() {

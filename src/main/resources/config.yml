@@ -129,3 +129,23 @@ commands:
 features:
   # Disable hunger (true) or enable hunger (false)
   no-hunger: true
+
+  worldborder:
+    # list each world along with the respective worldborder size
+    # example:
+    # world:
+    #   center-x: 0
+    #   center-z: 0
+    #   size: 10000
+    world:
+      center-x: 44.5
+      center-z: -74.5
+      size: 15000
+    world_nether:
+      center-x: 0
+      center-z: 0
+      size: 15000
+    world_the_end:
+      center-x: 0
+      center-z: 0
+      size: 15000
